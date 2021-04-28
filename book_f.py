@@ -129,7 +129,7 @@ def main(inputfilename, driver):
     all_dict = {"USA":4, "Canada":6, "Brazil":8, "Turkey":10, "Australia":12, "UK":14, "Singapore":16}
     for con in all_dict:
         outputfilename = con
-        for i in range(2,ws.max_row): # 1爲編號
+        for i in range(2,ws.max_row+1): # 1爲編號
             #取得編號 產品名 網址
             number = (ws.cell(row=i, column=1).value)
             name = (ws.cell(row=i, column=2).value)
